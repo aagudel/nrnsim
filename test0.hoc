@@ -1,0 +1,12 @@
+create soma
+soma {pt3dclear() pt3dadd(0, 0, 0, 15) pt3dadd(15, 0, 0, 15)}
+objref all
+all = new SectionList()
+access soma
+all.append()
+nseg = int(L)
+Ra = 100
+insert pas
+g_pas = 1/1000.0
+e_pas = 0.0
+

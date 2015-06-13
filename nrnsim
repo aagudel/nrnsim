@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Helper script to run nrnsim
+#This has to be run from the nrnsim folder to allow neuron
+#to use compiled mechanisms
+#Copyright Andres Agudelo-Toro (https://sites.google.com/site/aagudelotoro/)
+
+#Alternatives
+#IPython 0.10 fails when a command is given with the -c option, must be interactive then
+ipython -q4thread -pylab -i
+#IPython 0.11
+#ipython -pylab=qt -i -c "%run -i -e $HOM/lab-mpi/nrnsim/nsrun.py $1"
+#IPython 0.12.1 Console + Kernel
+#ipython console --pylab qt -i -c "%run -i $HOM/lab-mpi/nrnsim/nsrun.py $1"
+#IPython 0.12.1
+#ipython --pylab qt -i -c "%run -i -e $HOM/lab-mpi/nrnsim/nsrun.py $1"
+#IPython 0.13 in Pissis, don't know why it says 0.11
+#/usr/nld/ipython-0.11/bin/ipython --pylab qt -i -c "%run -i -e $SCR/nrnsim/nsrun.py $1"
+

@@ -1,0 +1,18 @@
+proc custominit() {
+  //Set here custom inital voltages e.g.:
+  //soma {
+  //  v = -65
+  //}
+  finitialize()
+}
+
+proc init() {
+  finitialize(v_init)
+  custominit()
+  if (cvode.active()) {
+    cvode.re_init()
+  } else {
+    fcurrent()
+  }
+  frecord_init()
+}
